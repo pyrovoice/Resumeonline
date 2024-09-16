@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="d-inline-flex">
+    <div class="me-2"><img src="assets/profilepic.jpg" class="rounded-circle roundpic mx-auto"></div>
+    <div class="m-auto">
+      <h1>Maxime GRAZZINI</h1>
+      <h2>Software Engineer</h2>
+      <h6>München, Konstanzer Strasse 38</h6>
+    </div>
+  </div>
+  <div class="d-table">
+    <div class="table-cell">Contacts:</div>
+    <div class="table-cell">
+      <div class="d-flex">
+        <div class="d-flex">
+          <button mat-raised-button class="rounded-pill" [cdkCopyToClipboard]="phone"
+            (click)="openSnackBar('+491794099346 copied to clipboard')">
+            <mat-icon>phone</mat-icon>
+            Phone
+          </button>
+        </div>
+        <div class="d-flex">
+          <button mat-raised-button class="rounded-pill" [cdkCopyToClipboard]="phone"
+            (click)="openSnackBar('maxime.grazzini@gmail.com copied to clipboard')">
+            <mat-icon>email</mat-icon>
+            email
+          </button>
+        </div>
+        <div class="d-flex">
+          <a [href]="linkedin" target="_blank"  mat-raised-button class="rounded-pill" role="button">
+            <mat-icon svgIcon="linkedin_icon"></mat-icon>
+            Linkedin
+          </a>
+        </div>
+        <div class="d-flex">
+          <a [href]="linkedin" target="_blank"  mat-raised-button class="rounded-pill" role="button">
+            <mat-icon svgIcon="github_icon"></mat-icon>
+            Github
+          </a>
+        </div>
+        <div class="d-flex">
+          <button mat-raised-button class="rounded-pill">
+            Copy all
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home">test</mat-icon>

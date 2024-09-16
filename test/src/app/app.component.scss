@@ -1,0 +1,11 @@
+.roundpic{
+    height:80pt;
+    width:80pt;
+}
+.table-cell{
+    display:table-cell
+}
+
+:host::ng-deep svg {
+    vertical-align: top !important;
+}
