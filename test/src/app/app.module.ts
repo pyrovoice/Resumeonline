@@ -8,10 +8,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SkillFilterComponent } from './skill-filter/skill-filter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillFilterComponent
   ],
   imports: [
     BrowserModule,
