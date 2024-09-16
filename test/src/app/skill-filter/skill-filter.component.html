@@ -1,2 +1,21 @@
-<li *ngFor="let skill of skills; index as i; first as isFirst"> {{i}}/{{skill.name}}/{{skill.displayedExperienceText}}/{{skill.experienceInyear}} <span
-        *ngIf="isFirst">default</span></li>
+<mat-form-field class="example-full-width">
+    <mat-label>Search for a skill</mat-label>
+    <input matInput placeholder="Java" >
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            skill
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="experienceInyear">
+        <th class="" mat-header-cell *matHeaderCellDef mat-sort-header>
+            Experience
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.displayedExperienceText}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

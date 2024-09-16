@@ -9,6 +9,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SkillFilterComponent } from './skill-filter/skill-filter.component';
+import { MatTableModule} from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -22,8 +27,12 @@ import { SkillFilterComponent } from './skill-filter/skill-filter.component';
     HttpClientModule,
     MatButtonModule,
     ClipboardModule,
-    MatSnackBarModule
-
+    MatSnackBarModule,
+    MatTableModule,
+    MatSortModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
