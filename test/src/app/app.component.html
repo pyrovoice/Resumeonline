@@ -32,14 +32,15 @@
           </a>
         </div>
         <div class="d-flex">
-          <a [href]="linkedin" target="_blank"  mat-raised-button class="rounded-pill" role="button">
+          <a [href]="github" target="_blank"  mat-raised-button class="rounded-pill" role="button">
             <mat-icon svgIcon="github_icon"></mat-icon>
             Github
           </a>
         </div>
         <div class="d-flex">
-          <button mat-raised-button class="rounded-pill">
-            Copy all
+          <button mat-raised-button class="rounded-pill" [cdkCopyToClipboard]="getAllLinks()"
+            (click)="openSnackBar('All info copied to clipboard')">
+            Copy all infos
           </button>
         </div>
       </div>

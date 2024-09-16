@@ -1,7 +1,7 @@
 import { Component, inject, Inject } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from "@angular/platform-browser";
-import {MAT_SNACK_BAR_DATA, MatSnackBar} from '@angular/material/snack-bar';
+import { MAT_SNACK_BAR_DATA, MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,7 @@ export class AppComponent {
   phone = "+491794099346"
   email = "maxime.grazzini@gmail.com"
   linkedin = "https://www.linkedin.com/in/m-grazzini/"
+  github = "https://github.com/pyrovoice/Resumeonline"
 
   constructor(private matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon(`linkedin_icon`,
@@ -25,5 +26,7 @@ export class AppComponent {
   openSnackBar(message: string) {
     this._snackBar.open(message, "Ok");
   }
-
+  getAllLinks() {
+    return this.phone + "\n" + this.email + "\n" + this.linkedin + "\n" + this.github
+  }
 }
