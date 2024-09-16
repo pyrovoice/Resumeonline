@@ -14,6 +14,6 @@ export class Skill {
         this.name = _name
         this.experienceInyear = _experienceInyear
         this.displayedExperienceText = _displayedExperienceText != "" ? _displayedExperienceText : String(_experienceInyear)
-        this.skillType = _skillType != SkillType.Default ? _skillType : SkillType.Default
+        this.skillType = _skillType != SkillType.Default ? _skillType : SkillType.Skill
     }
 }
