@@ -1,16 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-body {
-    font-family: Verdana, sans-serif;
-    background-color: whitesmoke;
-}
-
 html,
 body {
+    font-family: Verdana, sans-serif;
     height: 100%;
-}
-
-body {
+    background-color: rgb(177, 177, 177);
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     caret-color: transparent;
